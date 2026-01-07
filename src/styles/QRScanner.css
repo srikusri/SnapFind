@@ -1,0 +1,15 @@
+.qr-scanner-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#reader {
+    border-radius: 12px;
+    overflow: hidden;
+    border: none !important;
+}
+
+#reader__scan_region {
+    background: transparent !important;
+}
