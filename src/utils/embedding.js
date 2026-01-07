@@ -1,4 +1,8 @@
-import { pipeline } from '@xenova/transformers';
+import { pipeline, env } from '@xenova/transformers';
+
+// Force usage of remote models (Hugging Face Hub) to avoid 404s on local 'models/' path
+env.allowLocalModels = false;
+env.useBrowserCache = true;
 
 let extractor = null;
 
